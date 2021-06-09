@@ -1,4 +1,4 @@
-package com.bridgelabz.entity;
+package com.bridgelabz.hotelreservation;
 
 public class HotelDetails<E> {
     E hotelName, hotelPrice, hotelRating;
@@ -32,4 +32,5 @@ public class HotelDetails<E> {
     public void setHotelRating(E hotelRating) {
         this.hotelRating = hotelRating;
     }
+
 }
