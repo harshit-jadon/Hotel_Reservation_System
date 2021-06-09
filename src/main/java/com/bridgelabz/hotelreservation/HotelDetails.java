@@ -1,12 +1,12 @@
 package com.bridgelabz.hotelreservation;
 
 public class HotelDetails<E> {
-    E hotelName, hotelPrice, hotelRating;
+    E hotelName,  hotelWeekDayRate,  hotelWeekEndRate;
 
-    public HotelDetails(E hotelName, E hotelPrice, E hotelRating) {
+    public HotelDetails(E hotelName, E hotelWeekDayRate,E hotelWeekEndRate) {
         this.hotelName = hotelName;
-        this.hotelPrice = hotelPrice;
-        this.hotelRating = hotelRating;
+        this.hotelWeekDayRate = hotelWeekDayRate;
+        this.hotelWeekEndRate = hotelWeekEndRate;
     }
 
     public E getHotelName() {
@@ -17,20 +17,20 @@ public class HotelDetails<E> {
         this.hotelName = hotelName;
     }
 
-    public E getHotelPrice() {
-        return hotelPrice;
+    public E getHotelWeekDayRate() {
+        return hotelWeekDayRate;
     }
 
-    public void setHotelPrice(E hotelPrice) {
-        this.hotelPrice = hotelPrice;
+    public void setHotelWeekDayRate(E hotelWeekDayRate) {
+        this.hotelWeekDayRate = hotelWeekDayRate;
     }
 
-    public E getHotelRating() {
-        return hotelRating;
+    public E getHotelWeekEndRate() {
+        return hotelWeekEndRate;
     }
 
-    public void setHotelRating(E hotelRating) {
-        this.hotelRating = hotelRating;
+    public void setHotelWeekEndRate(E hotelWeekEndRate) {
+        this.hotelWeekEndRate = hotelWeekEndRate;
     }
 
 }

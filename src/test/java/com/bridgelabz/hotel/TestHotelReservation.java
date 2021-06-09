@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class TestHotelReservation {
     @Test
-    public void givenHotelDetails_withNameRateAndRating_ShouldReturnTrue() {
+    public void givenHotelDetails_withNameRateAndRating_ShouldReturnSize() {
         IOperations<String> operations = new HotelReservation<>();
         operations.addHotel("Lakewood","110","3");
         operations.addHotel("Bridgewood","160","4");
@@ -27,6 +27,14 @@ public class TestHotelReservation {
         int price = (int) hotel.getHotelPrice();
         Assert.assertEquals(220, price);
         System.out.println();
-
+    }
+    @Test
+    public void givenHotelDetails_withWeekdayAndWeekendRates_ShouldReturnSize() {
+        IOperations<String> operations = new HotelReservation<>();
+        operations.addHotel("Lakewood","110","90");
+        operations.addHotel("Bridgewood","150","50");
+        operations.addHotel("Ridgewood","220","150");
+        int size = operations.hotelSize();
+        Assert.assertEquals(3,size);
     }
 }

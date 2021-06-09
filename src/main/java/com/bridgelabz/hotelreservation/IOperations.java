@@ -1,11 +1,11 @@
 package com.bridgelabz.hotelreservation;
 
 public interface IOperations <E>{
-     void addHotel(E hotelName, E hotelPrice, E hotelRating);
+     void addHotel(E hotelName, E hotelWeekDayRate, E hotelWeekEndRate);
 
      int hotelSize();
 
-     HotelDetails cheapestHotel(E checkInDate, E checkOutDate );
+     HotelDetails<E> cheapestHotel(E checkInDate, E checkOutDate );
 
 
 
